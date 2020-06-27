@@ -3,6 +3,7 @@ import tensorflow_hub as hub
 import numpy as np
 import os, sys
 from sklearn.metrics.pairwise import cosine_similarity
+# ----------------------------------------------------
 
 with open('test_kwds', 'r') as fil:
     sentences_list = fil.readlines()
