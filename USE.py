@@ -31,7 +31,6 @@ embed = hub.Module(module_url)
 # Reduce logging output.
 tf.logging.set_verbosity(tf.logging.ERROR)
 
-
 with tf.Session() as session:
   session.run([tf.global_variables_initializer(), tf.tables_initializer()])
   sentences_embeddings = session.run(embed(sentences_list))
