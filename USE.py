@@ -22,7 +22,7 @@ def get_top_similar(sentence, sentence_list, similarity_matrix, topN):
     # get the indices of top similar
     indices = similarity_row.argsort()[-topN:][::-1]
     return [sentence_list[i] for i in indices]
-
+# ----------------------------------------------------------------
 module_url = "https://tfhub.dev/google/universal-sentence-encoder/2" #@param ["https://tfhub.dev/google/universal-sentence-encoder/2", "https://tfhub.dev/google/universal-sentence-encoder-large/3"]
 # module_url = "https://tfhub.dev/google/universal-sentence-encoder-large/3"
 # Import the Universal Sentence Encoder's TF Hub module
@@ -49,4 +49,4 @@ print('----------------------------------------')
 for x in range(len(top_similar)):
     print(top_similar[x])
 
-
+# ----------------------------------------------
