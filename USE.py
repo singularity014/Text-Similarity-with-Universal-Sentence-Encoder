@@ -8,7 +8,7 @@ with open('test_kwds', 'r') as fil:
     sentences_list = fil.readlines()
 sentences_list = list(map(lambda x:x.strip('\n'), sentences_list))
 
-
+# ---------------------------------------------------
 def cos_sim(input_vectors):
     similarity = cosine_similarity(input_vectors)
     return similarity
