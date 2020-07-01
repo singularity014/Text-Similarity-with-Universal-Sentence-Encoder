@@ -27,7 +27,7 @@ module_url = "https://tfhub.dev/google/universal-sentence-encoder/2" #@param ["h
 # module_url = "https://tfhub.dev/google/universal-sentence-encoder-large/3"
 # Import the Universal Sentence Encoder's TF Hub module
 embed = hub.Module(module_url)
-
+# ---------------------------------------------------------------
 # Reduce logging output.
 tf.logging.set_verbosity(tf.logging.ERROR)
 
